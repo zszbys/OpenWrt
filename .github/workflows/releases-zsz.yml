@@ -23,7 +23,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ARMv8/lede-zsz.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
+  DIY_P2_SH: diy-zsz.sh
   UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
   RECENT_LASTEST: 30
@@ -70,10 +70,10 @@ jobs:
       if: (!cancelled())
       uses: ophub/flippy-openwrt-actions@main
       env:
-        OPENWRT_ARMVIRT: https://github.com/breakings/OpenWrt/releases/download/openwrt_armvirt/openwrt-armvirt-64-generic-rootfs.tar.gz
+        OPENWRT_ARMVIRT: https://github.com/zszbys/OpenWrt/releases/download/openwrt_armvirt/openwrt-armvirt-64-generic-rootfs.tar.gz
         PACKAGE_SOC: all
-        WHOAMI: breakings
-        #KERNEL_REPO_URL: https://github.com/breakings/OpenWrt/tree/main/opt
+        WHOAMI: zsz
+        #KERNEL_REPO_URL: https://github.com/zszbys/OpenWrt/tree/main/opt
         KERNEL_VERSION_NAME: 5.15.100_6.1.18
         #OPENWRT_VER: R23.5.1
         KERNEL_AUTO_LATEST: true
