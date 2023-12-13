@@ -643,7 +643,7 @@ sed -i 's/PKG_HASH:=.*/PKG_HASH:=fe94a1113d9edd60bdad6075068c38cdfec2449a3e0d5a1
 #svn co https://github.com/openwrt/openwrt/branches/openwrt-21.02/package/kernel/mt76 package/kernel/mt76
 
 # 可道云
-#rm -rf package/lean/luci-app-kodexplorer
+rm -rf package/lean/luci-app-kodexplorer
 #cp -r $GITHUB_WORKSPACE/general/luci-app-kodexplorer package/lean/luci-app-kodexplorer
 
 # exfatprogs
